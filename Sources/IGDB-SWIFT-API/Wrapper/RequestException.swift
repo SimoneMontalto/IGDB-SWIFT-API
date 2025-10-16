@@ -9,9 +9,9 @@
 import Foundation
 
 public struct RequestException: Error {
-    let statusCode: Int
-    let url: String
-    let msg: String
+    public let statusCode: Int
+    public let url: String
+    public let msg: String
     
     public init(statusCode: Int, url: String, msg: String) {
         self.statusCode = statusCode
